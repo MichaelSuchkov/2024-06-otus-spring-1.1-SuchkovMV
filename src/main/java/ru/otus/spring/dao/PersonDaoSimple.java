@@ -1,10 +1,11 @@
 package ru.otus.spring.dao;
 
+import org.springframework.stereotype.Repository;
 import ru.otus.spring.domain.Person;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class PersonDaoSimple implements PersonDao{
     private final List<Person> persons = new ArrayList<>();
     private final List<Object> cash = new ArrayList<>();
